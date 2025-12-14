@@ -222,3 +222,25 @@ copyright,
   font-size: 13px;
   text-align: center;
 }
+/* Contact profile with circular image */
+.contact-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile-pic {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(167,185,163,0.6);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 600px) {
+  .contact-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
